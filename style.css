@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Montserrat:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    background:#d9d9d9;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+#logo {
+    height: 10vw;
+    margin: 0.5vw;
+}
+/* Navigation Bar */
+nav a {
+    color: #07564d;
+    text-decoration: none;
+    margin: 0 0.8rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+
+}
+/* Hero Image */
+#hero {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background: url(images/hero.jpg) no-repeat center;
+    background-size: cover;
+
+}
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    align-items: center;
+
+}
+main img {
+    width: 30vw;
+    border-radius: 25%;
+}
+#contact-details p {
+    color: #07564d;
+
+}
+
+#hero h1 {
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 4.5rem;
+    color:#98cfd7;
+}
+#hero h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    color:#bdd0cc;
+    padding: 0.5rem;
+}
+
+.button {
+    display: inline;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    border: 2px solid;
+    padding: 0.5rem 1rem;
+    color: #bdd0cc;
+}
+
+.contact-links {
+    display:flex;
+    justify-content: center;
+
+}
+.contact-links img {
+    width: clamp(2rem, 1.5vw + 1.8rem, 2.5rem);
+  }
