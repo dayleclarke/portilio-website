@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Montserrat:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Codystar&family=Fredericka+the+Great&family=Kranky&family=Limelight&family=Montserrat:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+:root {
+    --primary-color: #07564d;
+    --secondary-color: #bdd0cc;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -8,29 +13,41 @@
 body {
     display: flex;
     flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
 }
 
 /* Header */
+.logo {
+    font-family: 'Limelight', cursive;
+    font-size: 3rem;
+    color:   var(--secondary-color);
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border: 1px solid   var(--secondary-color);
+    border-radius:50%; 
+    
+}
 
 header {
     display: flex;
-    background:#d9d9d9;
+    background: var(--primary-color);
     justify-content: space-between;
     align-items: center;
+    border-bottom: solid 0.5rem  var(--secondary-color)
 
 
 }
 
 #logo {
-    height: 10vw;
-    margin: 0.5vw;
+    height: 5rem;
+    margin: 0.2rem;
 }
 /* Navigation Bar */
 nav a {
-    color: #07564d;
+    color:  var(--secondary-color) ;
     text-decoration: none;
     margin: 0 0.8rem;
-    font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
 
 }
@@ -39,7 +56,7 @@ nav a {
     display:flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem;
+    padding: 1rem;
     background: url(images/hero.jpg) no-repeat center;
     background-size: cover;
 
@@ -50,6 +67,7 @@ main {
     flex-wrap: wrap;
     padding: 2rem 0;
     align-items: center;
+    flex: 1;
 
 }
 main img {
@@ -57,25 +75,23 @@ main img {
     border-radius: 25%;
 }
 #contact-details p {
-    color: #07564d;
+    color: var(--primary-color);
 
 }
 
 #hero h1 {
     font-family: 'Fredericka the Great', cursive;
     font-size: 4.5rem;
-    color:#98cfd7;
+    color: var(--secondary-color);
 }
 #hero h2 {
-    font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
-    color:#bdd0cc;
+    color: var(--secondary-color);
     padding: 0.5rem;
 }
 
 .button {
     display: inline;
-    font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     border: 2px solid;
     padding: 0.5rem 1rem;
@@ -90,3 +106,18 @@ main img {
 .contact-links img {
     width: clamp(2rem, 1.5vw + 1.8rem, 2.5rem);
   }
+
+  /* Footer */
+footer {
+    background: var(--primary-color);
+    border-top: solid 0.5rem #bdd0cc;
+
+}
+
+footer p {
+    text-align: center;
+    color: #bdd0cc;
+    padding: 1rem;
+    margin-top: auto;
+
+}
