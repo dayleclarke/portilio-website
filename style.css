@@ -1,7 +1,9 @@
+/* Imported Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Codystar&family=Fredericka+the+Great&family=Kranky&family=Limelight&family=Montserrat:ital,wght@0,400;0,600;0,700;1,400&display=swap');
 :root {
     --primary-color: #07564d;
     --secondary-color: #bdd0cc;
+    --primary-color-opaque: #07564d98;
 }
 
 * {
@@ -14,11 +16,13 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Montserrat', sans-serif;
+    color: var(--primary-color);
     min-height: 100vh;
+
 }
 
 /* Header */
-.logo {
+/* .logo {
     font-family: 'Limelight', cursive;
     font-size: 3rem;
     color:   var(--secondary-color);
@@ -27,11 +31,11 @@ body {
     border: 1px solid   var(--secondary-color);
     border-radius:50%; 
     
-}
+} */
 
 header {
     display: flex;
-    background: #07564d98;
+    background: var(--primary-color-opaque);
     justify-content: space-between;
     align-items: center;
     border-bottom: solid 0.5rem  #bdd0cc;
@@ -62,6 +66,7 @@ nav a {
     display:flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 1rem;
 
 
@@ -74,6 +79,7 @@ main {
     align-items: center;
     justify-content: space-around;
     flex: 1;
+
     /* background:  #c8b6a7; */
 
 }
@@ -84,6 +90,7 @@ main img {
 }
 #contact-details p {
     color: var(--primary-color);
+ 
 
 }
 
@@ -104,20 +111,53 @@ main img {
     border: 2px solid;
     padding: 0.5rem 1rem;
     color: #bdd0cc;
-    background-color: #07564d9f;
+    background-color: var(--primary-color-opaque);
 }
-.introduction {
 
+p {
+    padding: 1rem;
+    margin: 0.2rem 2rem;
+
+
+
+}
+h3 {
+    text-align: center;
+    padding: 1rem 2rem;
+    margin: 0.2rem 2rem;
+
+
+}
+
+
+#contact-details {
+    display: flex;
+    background: #c5b7aa;
+    margin-top: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+
+
+}
+
+#contact-details p, #contact-details h3 {
+    padding: 0.3rem;
+    text-align: left;
     
-
 }
+
+
+
 .contact-links {
+    margin: 0rem 2rem;
     display:flex;
     justify-content: center;
 
 }
 .contact-links img {
     width: clamp(2rem, 1.5vw + 1.8rem, 2.5rem);
+    padding: 0.1rem;
   }
 
   /* Footer */
@@ -133,4 +173,42 @@ footer p {
     padding: 1rem;
     margin-top: auto;
 
+}
+
+/* Image Containers */
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+
+}
+figure {
+    width: 30%;
+    height: 100%;
+    margin: 1rem;
+
+
+}
+
+figure img {
+    border-radius: 10%;
+    margin-left:2rem;
+
+}
+figcaption {
+    margin-top: -6.2rem;
+    padding: 0.5rem 1rem;
+    background: var(--primary-color-opaque);
+    color: var(--secondary-color);
+    position: absolute;
+    border-radius: 10%
+
+    
+
+
+}
+.test {
+    width: 25%;
 }
