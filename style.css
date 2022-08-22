@@ -98,12 +98,13 @@ main {
     display: flex;
     /* flex-direction: column; */
     flex-wrap: wrap;
-    padding: 2rem 0;
     align-items: center;
     justify-content: space-around;
     flex: 1;
+    margin: 5.5vw;       
+    } 
     /* background:  #c8b6a7; */
-}
+
 main img {
     width: 30vw;
     border-radius: 25%;
@@ -117,14 +118,14 @@ main img {
 
 p {
     padding: 1rem;
-    margin: 0.2rem 2rem;
+    margin: 0.2rem;
+    font-size: 1rem;
 
 
 }
 h3 {
     text-align: center;
     padding: 1rem 2rem;
-    margin: 0.2rem 2rem;
 
 }
 
@@ -132,25 +133,26 @@ h3 {
     display: flex;
     background: #c5b7aa;
     margin-top: auto;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
-    padding: 1rem;
+    padding: 0.5rem;
+
 
 }
 #contact-details p, #contact-details h3 {
     padding: 0.3rem;
-    text-align: left;
+    text-align: center;
     
 }
 
-
 .contact-links {
-    margin: 0rem 2rem;
+    margin: 0.6rem 2rem;
     display:flex;
     justify-content: center;
 }
 .contact-links img {
-    width: clamp(2rem, 1.5vw + 1.8rem, 2.5rem);
+    width: clamp(2.5rem, 2.5vw + 1.8rem, 4rem);
     padding: 0.1rem;
   }
   /* Footer */
@@ -226,6 +228,7 @@ figcaption {
         background-position: bottom right; 
         
     }
+
 @media screen and (min-width: 700px) {
     .hero-image {
          
@@ -234,16 +237,15 @@ figcaption {
          background-size: cover;
      
     }
+    p {
+        font-size: 1.3rem;
+    }
+    h3 {
+        font-size: 1.6rem;
+    }
 
 }
     
- 
 
-/* .hero-image {
-    background: url(images/hero-crop4.jpg) no-repeat;
-    background-position: center; 
-    background-size: cover;
-    background-color: var(--primary-color);
-    border-bottom: solid 0.5rem   #bdd0cc; */
-}
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+/* 
+@media screen and (min-width: 768px) and (max-width: 1200px) { */
