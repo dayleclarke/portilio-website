@@ -36,11 +36,17 @@ header {
     margin: 0.2rem; 
 }
 /* Navigation Bar */
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
 nav a {
     color:  var(--secondary-color);
     text-decoration: none;
-    padding: 0 0.4rem;
-    font-size: clamp(1.1rem, 2.66vw + 0.44rem, 1.6rem);
+    padding: 0 1.9vw;
+    font-size: clamp(1.1rem, 2.60vw + 0.44rem, 1.6rem);
   
 }
 nav a:hover {  
@@ -196,6 +202,11 @@ figcaption {
      }
      nav {
         display: flex;
+        margin-right: 1rem;
+        width: auto;
+     }
+     nav a {
+        padding: 0, 1rem;
      }
      
      nav a::before {
@@ -226,13 +237,8 @@ figcaption {
 
 }
     
-    
-    nav a {
-        margin: 0 0.8rem;
+ 
 
-         
-    }
-}
 /* .hero-image {
     background: url(images/hero-crop4.jpg) no-repeat;
     background-position: center; 
