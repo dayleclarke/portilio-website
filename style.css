@@ -225,6 +225,7 @@ figcaption {
 .blog-card a {
     text-decoration: none;
     padding: 1rem;
+    font-size: 1em;
     letter-spacing: 0.1em;
     color: var(--primary-color)
    }
@@ -292,6 +293,38 @@ figcaption {
     h3 {
         font-size: 1.6rem;
     }
+    .blog-container {
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    .blog-image {
+        margin: 0;
+        padding: 0;
+    
+        }
+        
+    .blog-image img {
+        margin: 0;
+        width: 100%;
+        height: auto;
+        border-radius: 20px 20px 0 0;
+        }
+        
+    .blog-card {
+         width: 45%;
+            }
+    
+    .blog-card:nth-child(1) {
+        width: 100%;
+            }
+
+    }
+    
+
+   
+    /* background:  #c8b6a7; */
 
 }
     
