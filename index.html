@@ -5,28 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dayle Clarke</title>
+    <!-- Favicon Links for Browser Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/images/favicon/site.webmanifest">
+    <!-- Link to CSS Styling Page -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Begininning of Header Area -->
-    <div class="hero-image">
-        <header>
-            <img id='logo' src="images/logo8.png" alt="DC"> 
-            <!-- Main Navigation bar -->
+     <!-- Begininning of Header Area -->
+     <header>
+        <!-- First Header row -->
+        <section class="top-bar">
+            <img id='logo' src="images/logo8.png" alt="DC">             
             <nav>
                 <a href="/index.html">Home</a>
                 <a href="/about-me.html">About Me</a>
                 <a href="/projects.html">Projects</a>
                 <a href="/blog.html">Blog</a>
             </nav>
-        </header>
-    <!-- Hero Element -->
+        </section>
+        <!-- Hero Element -->
         <section id="hero">           
             <h1>Dayle Clarke</h1>
             <h2>Aspiring Web Developer</h2>
             <a href="#contact-details" class="button">Contact Me</a>
         </section>
-    </div>
+    </header>
     <main>
         <img src="images/myphoto.png" alt="">       
         <div class="introduction">
@@ -36,24 +42,25 @@
    
         </div>        
     </main>
-    <section id="contact-details">
-        <div>
-            <h3>Contact Me</h3>
-            <p>dayleclarke07@gmail.com</p>
-            <p>+61 405308617 </p>
-        </div>
-        <div class="contact-links">
-            <a href="https://www.facebook.com/dayle.clarke.14"><img src="images/facebook.svg" alt=""></a>
-            <a href="https://github.com/dayleclarke"><img src="images/github-logo.svg" alt="Github"></a>
-            <a href="https://linkedin.com/in/dayle-clarke-ab54a8249"><img src="images/linkedin-logo.svg" alt="LinkedIn"></a>
-            <a href="https://twitter.com/DayleClarke07"><img src="images/twitter-logo.svg" alt="Twitter"></a>
-            <a href="https://www.youtube.com/channel/UCIHMJRq1XjQHDDXFRtltP4A"><img src="images/youtube-round-icon(1).svg" alt="YouTube"></a>
-        </div>
-    </section>
     <footer>
-        <p>&copy; Dayle Clarke 2022</p>
+        <section id="contact-details">
+            <div>
+                <h3>Contact Me</h3>
+                <p>dayleclarke07@gmail.com</p>
+                <p>+61 405308617 </p>
+            </div>
+            <div class="social-media-links">
+                <a href="https://www.facebook.com/dayle.clarke.14"><img src="images/facebook.svg" alt=""></a>
+                <a href="https://github.com/dayleclarke"><img src="images/github-logo.svg" alt="Github"></a>
+                <a href="https://linkedin.com/in/dayle-clarke-ab54a8249"><img src="images/linkedin-logo.svg" alt="LinkedIn"></a>
+                <a href="https://twitter.com/DayleClarke07"><img src="images/twitter-logo.svg" alt="Twitter"></a>
+                <a href="https://www.youtube.com/channel/UCIHMJRq1XjQHDDXFRtltP4A"><img src="images/youtube-round-icon(1).svg" alt="YouTube"></a>
+            </div>
+        </section>
+        <section class="copyright-info">
+            <p>&copy; Dayle Clarke 2022</p>
+        </section>
     </footer>
-
     
 </body>
 </html>
