@@ -247,7 +247,7 @@ figcaption {
   }
 
  
-/* Blog Page Styling */
+/* Main Blog Page Styling */
 
 .blog-image {
     margin: 0;
@@ -265,7 +265,7 @@ figcaption {
 .blog-card, .project-card {
   background: white;
   border-radius: 20px;
-  transition: 0.3s;
+  transition: 0.3s;  
   margin-bottom: 1rem;
   padding-bottom: 1rem;
 
