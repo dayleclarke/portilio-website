@@ -1,5 +1,6 @@
 /* Imported Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Codystar&family=Fredericka+the+Great&family=Kranky&family=Limelight&family=Montserrat:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Montserrat:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap');
+
 /* Site Wide Stylings */
 :root {
     --primary-color: #07564d;
@@ -122,6 +123,10 @@ p {
     margin: 0.2rem;
     font-size: 1rem;
 
+
+}
+h2 {padding: 1rem;
+    margin: 0.2rem;
 
 }
 h3 {
@@ -255,7 +260,7 @@ figcaption {
   padding-bottom: 1rem;
 
 }
-.read-more {
+.spaced-text {
     text-decoration: none;
     padding: 1rem;
     font-size: 1em;
@@ -282,7 +287,7 @@ figcaption {
 .blog-title {
     padding: 0 1rem;
   }
-/* Blog Styling */
+/* Blog Post Styling */
 
 .first-para::first-letter {
     color: var(--primary-color);
@@ -296,8 +301,105 @@ figcaption {
     initial-letter:4; */
 
 }
+/* Blog Post Styling */
+ 
+ .blog-post {
+    display: flow-root;
+ }
+ .blog-post-img {
+    float: right;
+    border-radius: 50%;
+    shape-outside: ellipse(43% 50% at center center);
+    margin-left: 2rem;
+    width: 50%;
+   
+ }
 
+ .blog-post-img-transparent {
+    float: right;
+    shape-outside: url(/images/blog/plant.png);
+    width: 50%;
+    margin: 0.1em;
+   
+ }
+ 
 
+blockquote {
+    background: #c5b7aa23;
+    border-left:1em solid var(--primary-color);
+    margin:1.5em 1em;
+    padding:.5em 1em;
+    quotes:"\201C""\201D";
+    line-height: 2.4em;
+}
+blockquote p {
+    color: var(--primary-color);
+}
+
+.quote-container:before {
+    content:open-quote;
+    font-family: 'Fredericka the Great', cursive;
+    font-size:5em;
+    line-height:.1em;
+    vertical-align:-.4em;
+}
+.quote-container:after {
+    content:close-quote;
+    font-size:5em;
+    font-family: 'Fredericka the Great', cursive;
+    line-height:.1em;
+    margin-right:.25em;
+    vertical-align:-.4em;
+}
+
+blockquote :first-child {
+    display:inline;
+}
+
+blockquote :last-child {
+    margin-bottom:0;
+}
+.cite{
+    display: flex;
+    justify-content: flex-end;
+    
+    
+
+}
+
+.cite p {
+    font-weight: 600;
+    line-height: normal;
+
+}
+
+.symbol {
+    font-size:6em;
+    line-height:.1em;
+    /* margin-right:.25em;
+    vertical-align:-.4em; */
+
+}
+
+.post-nav  {
+    display:flex;
+    justify-content: space-between;
+    background:var(--primary-color);
+    
+}
+.next-post {
+    text-align: right;
+}
+
+.next-post, .previous-post {
+    width: 50%;
+    color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+
+    
+}
+ 
   @media screen and (min-width: 400px) {
     .top-bar {
         flex-direction: row;
@@ -312,7 +414,7 @@ figcaption {
         padding: 0, 1rem;
      }
      
-     nav a::before {
+    nav a::before {
         content: '';
         display: block;
         height: 5px;
@@ -368,8 +470,15 @@ figcaption {
     .blog-card:nth-child(1) {
         width: 100%;
             }
-    }
     
+    
+    blockquote p {
+        color: var(--primary-color);
+        font-size: 1.6rem;
+    
+    }
+    }
+  
    
     /* background:  #c8b6a7; */
 
