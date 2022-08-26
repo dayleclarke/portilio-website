@@ -196,7 +196,7 @@ h3 {
 figure {
     width: 30%;
     height: 100%;
-    margin: 1rem;
+    /* margin: 1rem; */
 
 }
 figure img {
@@ -248,11 +248,28 @@ figcaption {
 
  
 /* Main Blog Page Styling */
+.blog-container {
+    padding: 0.5rem 1rem;
+}
 
+.blog-container h2 {
+    margin-bottom: 0.5rem;
+}
+.blog-card, .project-card {
+    background: white;
+    border-radius: 20px;
+    transition: 0.3s;  
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+  
+  }
+  
+  .blog-card p, .blog-card h5, .blog-card h3 {
+    padding: 0 1.4rem 0 1.4rem;
+}
 .blog-image {
-    margin: 0;
-    padding: 0;
     width: 100%;
+    margin-bottom: 1rem;
 }
 
 .blog-image img {
@@ -261,18 +278,21 @@ figcaption {
     height: auto;
     border-radius: 20px 20px 0 0;
 }
+.blog-card h5 {
+    letter-spacing: 0.1em; 
+    margin-bottom: 0.5em;     
+}
 
-.blog-card, .project-card {
-  background: white;
-  border-radius: 20px;
-  transition: 0.3s;  
-  margin-bottom: 1rem;
-  padding-bottom: 1rem;
+.blog-card h3, .blog-card p {
+    margin-bottom: 2rem;
 
+}
+.longer-blog-preview {
+    display: none;
 }
 .spaced-text {
     text-decoration: none;
-    padding: 1rem;
+    padding: 1rem 1.4rem;
     font-size: 1em;
     letter-spacing: 0.1em;
     color: var(--primary-color)
@@ -283,22 +303,11 @@ figcaption {
     letter-spacing: 0.1em;
     color: var(--primary-color)
    }
-.blog-card h5 {
-    padding: 0.5rem 1rem;
-    letter-spacing: 0.1em;
-    
-    
-}
+
 .blog-card:hover {  
     box-shadow: 0 4px 20px #03201dd3;
     cursor: pointer;
 }
-
-.blog-title {
-    padding: 0 1rem;
-    text-align: left;
-  }
-
   
 /* Blog Post Styling */
 
@@ -462,7 +471,7 @@ blockquote :last-child {
 
     
 }
- 
+ /* These changes will be applied to all screen sizes larger than 400px*/
   @media screen and (min-width: 400px) {
     .top-bar {
         flex-direction: row;
@@ -496,6 +505,29 @@ blockquote :last-child {
         line-height: 1.6;
     
     }
+    /* Media Queries for Main Blog Page (For Screens 400px+)*/
+    .blog-container{
+        padding: 1rem 1.5rem;
+   
+    }
+    .blog-image img {
+        height: 47vw;
+        object-fit:cover;
+        object-position: center;
+        
+    }
+    .reposition-lower img {
+        object-position: 50% 70%; 
+        
+    }
+    .reposition-higher img {
+        object-position: 50% 8%; 
+        
+    }
+
+
+
+    /* Media Queries for Blog Posts (For Screens 400px+) */
     .post-nav-container {
         margin: 0;
     }
@@ -507,14 +539,10 @@ blockquote :last-child {
     }
 }
 
-    /* .header {
-        background-position: bottom right; 
-        
-    } */
 
-   @media screen and (min-width: 700px) {
+/* These changes will be applied to all screen sizes larger than 650px (they will also have the effect applied from the previous media query unless overridden below*/
+   @media screen and (min-width: 650px) {
     .header {
-         
          background: url(images/hero-desktop2.jpg) no-repeat;
          background-position: bottom; 
          background-size: cover;
@@ -530,6 +558,59 @@ blockquote :last-child {
     h3 {
         font-size: 1.6rem;
     }
+    /* Media Queries for Main Blog Page (For Screens 650px+)  */
+    /* This will show a longer preview of the blog post */
+    .longer-blog-preview {
+        display: inline;
+    }
+    /* This will change the content to go across two columns due to the larger screen size */
+    .blog-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+           
+    .blog-card {
+        width: 48%;
+        margin-bottom: 1.5rem;
+        min-height: 45rem;
+
+
+            }
+    /* .blog-card:not(:first-child) {
+        background-color: #900;
+    }  */
+    .blog-card p {
+        font-size: 1rem;
+
+    }
+    .blog-card h3 {
+        font-size: 1.3rem;
+    }  
+    .blog-card img {
+        height: 30vw;
+
+    }      
+    .longer-blog-preview {
+        display: none;
+            }
+    .blog-card:nth-child(2) {
+        width: 100%;
+        margin: 0.5rem 1.5rem 2rem;
+        min-height: 20rem;
+
+            }
+    .blog-container h2 {
+        width: 100%;
+        text-align: center;
+
+                    }
+    .blog-card:nth-child(2) .longer-blog-preview{
+        display: inline;
+            }
+              
+      
+    /* Media Queries for Blog Posts (For Screens 650px+) */
     .blog-post h3 {
         margin-bottom: 1rem;
      }
@@ -545,41 +626,15 @@ blockquote :last-child {
         color: var(--primary-color)
         
      }
-
-    
-    .blog-container {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .blog-image {
-        margin: 0;
-        padding: 0;
-    
-        }
-        
-    .blog-image img {
-        margin: 0;
-        width: 100%;
-        height: auto;
-        border-radius: 20px 20px 0 0;
-        }
-        
-    .blog-card {
-         width: 45%;
-            }
-    
-    .blog-card:nth-child(2) {
-        width: 100%;
-            }
-    
-    
-    blockquote p {
+     blockquote p {
         color: var(--primary-color);
         font-size: 1.6rem;
     
     }
- 
+       
     }
+
+   
     @media screen and (min-width: 1000px) {
         main {
             padding: 5vw 6vw; 
