@@ -188,12 +188,16 @@ h3 {
 
 .lightroom-video-container {
     width: 90%;
+    position: relative;
+    
     
 }
 
 .lightroom-video-container img {
     width: 100%;
     border-radius: 50%;
+    position: relative;
+    left:7%;
 }
 
 .lightroom-video:nth-of-type(2) {
@@ -201,14 +205,42 @@ h3 {
     border-radius: 50%;
     margin-top: -30%;
 }
-
-figcaption {
+.resume-link {
+    position: relative;
+    width: 40vw;
+    height: 40vw;
+    background: url(/images/texture.jpg);
+    shape-outside: ellipse(50% 50% at center center);
+    border-radius: 50%;
+    float: right;
+}
+.resume-link a {
     
-    padding: 0.8rem 1rem;
-    /* margin: -2rem 0 0 5rem; */
-    background: var(--primary-color-opaque);
     color: var(--secondary-color);
-    border-radius: 20px;
+    text-decoration: none;
+    position:absolute;
+    top: 50%;
+    padding: 1rem;
+    background:#07564d
+
+
+  
+    
+}
+
+.lightroom-video-container figcaption {  
+    padding: 1.3rem;
+    /* margin: -2rem 0 0 5rem; */
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    font-size: 0.9rem;
+
+    /* top:-3rem;
+    left: 4rem; */
 
     /* position: absolute; */
     
@@ -223,14 +255,13 @@ figcaption {
 }
 figure {
     width: 30%;
-    height: 100%;
     /* margin: 1rem; */
 
 }
-figure img {
+/* figure img {
     border-radius: 10%;
     margin-left:2rem;
-}
+} */
 /* figcaption {
     /* margin-top: -6.2rem; */
     /* padding: 0.5rem 1rem;
@@ -240,7 +271,7 @@ figure img {
     /* border-radius: 10% */
     
 
-} */
+*/
 .test {
     width: 25%;
 }
@@ -549,6 +580,21 @@ blockquote :last-child {
     p {
         line-height: 1.6;
     
+    }
+    .lightroom-video-container figcaption {
+        border-radius: 10px;
+        box-shadow: 0 4px 10px #03201db9;
+        width: 80%;
+        top: 50%; 
+        left: 30%;
+        background: var(--primary-color-opaque);
+        padding: 2.6vw;
+
+
+    }
+
+
+
     }
     /* Media Queries for Main Blog Page (For Screens 400px+)*/
 
