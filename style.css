@@ -1,8 +1,6 @@
 /* Imported Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,600&display=swap');
 
-
-
 /* Site Wide Stylings */
 :root {
     --primary-color: #07564d;
@@ -11,11 +9,13 @@
     --ff-body: 'Montserrat', sans-serif;
     --ff-headings: 'Montserrat', sans-serif;
 }
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
 body {
     display: flex;
     flex-direction: column;
@@ -24,8 +24,9 @@ body {
     min-height: 100vh;
     background: #f0f0fd;
 }
-/* Header */
 
+/* Stylings for Header */
+ /* Graphical Component 1 (Interactive Nav Bar with Hover Animation)  */
 .top-bar {
     display:flex;
     flex-direction: column;
@@ -40,25 +41,25 @@ body {
     height: clamp(3rem, 6vw, 3.5rem);
     margin: 0.2rem; 
 }
-/* Navigation Bar */
 
 nav {
     display: flex;
     width: 100%;
     justify-content: space-around;
 }
+
 nav a {
     color:  var(--secondary-color);
     text-decoration: none;
     padding: 0 1.9vw;
-    font-size: clamp(1.1rem, 2.60vw + 0.44rem, 1.6rem);
-  
+    font-size: clamp(1.1rem, 2.60vw + 0.44rem, 1.6rem);  
 }
+
 nav a:hover {  
     color: #c5b7aa;
 }
 
-/* Hero Image */
+/*  Graphical Component 2 (Hero Element with website title and an ancher link to contact info)*/
 header {
     background: url(images/hero-crop4.jpg) no-repeat;
     background-position: center; 
@@ -66,20 +67,22 @@ header {
     background-color: var(--primary-color);
     border-bottom: solid 0.5rem   #bdd0cc;
 }
+
 #hero {
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 0.6rem 0;
-
 }
+
 #hero h1 {
     font-family: 'Fredericka the Great', cursive;
     font-size: clamp(3rem, 6.5vw + 0.44rem, 6rem);
     margin: 0.1em 0.1em;
     color: var(--secondary-color);
   }
+
 #hero h2 {
     font-family: var(--ff-headings);
     font-size: clamp(1.5rem, 1.9vw + 0.44rem, 2.6rem);
@@ -90,6 +93,7 @@ header {
     text-align: center;
     width: 100%;
 }
+
 .button {
     display: inline;
     text-decoration: none;
@@ -100,7 +104,52 @@ header {
     background-color: var(--primary-color-opaque);
     font-size: clamp(1.1rem, 2.60vw + 0.44rem, 1.6rem);
 }
+
 /* Styling for the main content site wide */
+
+p    {
+    padding: 1rem 1.2rem;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+li {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin: 0rem 2rem;
+}
+
+h2 {
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    width: 100%;
+}
+
+h3 {
+    text-align: center;
+    padding: 1rem 1.2rem 0;
+    text-align: left;
+    color: var(--primary-color)
+}
+
+h4 {
+    font-size: 1rem;
+    color: #444;
+    text-transform: uppercase;
+    padding: 1rem;
+}
+
+h5 {
+    padding: 1rem 1.5rem 0.2rem 1.5rem;
+    letter-spacing: 0.1em;
+    color: var(--primary-color)
+}
+
+.extra-bottom-margin {
+    margin-bottom: 1rem;
+}
 
 main {
     display: flex;  
@@ -120,57 +169,15 @@ main p, main li {
     color: #282828;
 }
 
-p    {
-    padding: 1rem 1.2rem;
-    font-size: 1rem;
-    line-height: 1.4;
-}
-
-li {
-    font-size: 1rem;
-    line-height: 1.4;
-    margin: 0rem 2rem;
-
-
-}
-h2 {
-    font-family: 'Fredericka the Great', cursive;
-    font-size: 3rem;
-    text-align: center;
-    margin-bottom: 0.5rem;
-    width: 100%;
-    
-    /* font-size: clamp(3rem, 6.5vw + 0.44rem, 6rem); */
-
-}
-h3 {
-    text-align: center;
-    padding: 1rem 1.2rem 0;
-    text-align: left;
-}
-
-h4 {
-    font-size: 1rem;
-    color: #444;
-    text-transform: uppercase;
-    padding: 1rem;
-}
-h5 {
-    padding: 1rem 1.5rem 0.2rem 1.5rem;
-    letter-spacing: 0.1em;
-}
-.extra-bottom-margin {
-    margin-bottom: 1rem;
-}
 main a {
     color: var(--primary-color);
 }
-main a:visited {
-    color: #282828;
-    
-}
-  /* Footer */
 
+main a:visited {
+    color: #282828;   
+}
+
+  /* Footer Stylings */
 #contact-details {
   display: flex;
   background: #c5b7aa;
@@ -179,14 +186,16 @@ main a:visited {
   flex-wrap: wrap;
   align-items: center;
   padding: 0.5rem;
-  margin-top: 2rem;
+}
 
-
-}#contact-details p {
+#contact-details p {
     color: var(--primary-color);
-  }
+    text-align: center;
+    padding: 0.3rem;
+    line-height: 1.5rem;
+}
 
-  #contact-details p, #contact-details h3 {
+#contact-details h3 {
     padding: 0.3rem;
     text-align: center;
 }
@@ -196,6 +205,7 @@ main a:visited {
     display:flex;
     justify-content: center;
 }
+
 .social-media-links img {
     width: clamp(2.5rem, 2.5vw + 1.8rem, 4rem);
     padding: 0.1rem;
@@ -205,13 +215,26 @@ main a:visited {
     background: var(--primary-color);
     border-top: solid 0.5rem #bdd0cc;
 }
+
 .copyright-info p {
     text-align: center;
     color: #bdd0cc;
-    padding: 1rem;
+    padding: 0.5rem;
     margin-top: auto;
 }
-/* About Me Stylings */
+/* Index (Homepage) Exclusive Stylings */
+.welcome-container img {
+    border-radius: 50%;
+    width: 60%
+}
+
+.welcome-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* About Me Exclusive Stylings */
 
 /* Resume Link Styling */
 
@@ -341,7 +364,7 @@ main a:visited {
 } */
 
 .teaching-image figcaption {
-    background: var(--primary-color-opaque);
+    background: var(--primary-color);
     height: 20%;
     color: var(--secondary-color);
     padding: 1rem 1rem 3.5rem;
@@ -481,70 +504,59 @@ figure {
 
 
 
-/* Projects Styling */
-
+/* Projects */
+/* Embeded YouTube Videos*/
 .iframe-container{
     position: relative;
     width: 100%;
     padding-bottom: 56.25%; 
     height: 0;
-  }
-  .iframe-container iframe{
+}
+
+.iframe-container iframe{
     position: absolute;
     top:0;
     left: 0;
     width: 100%;
     height: 100%;
-  }
+}
 
-  .project-card {
-
+.project-card {
     box-shadow: 0 4px 10px #03201db9;
     padding: 0;
     margin-bottom: 2rem;
     background: white;
     border-bottom: solid 1rem black;
     border-radius: 20px;
-  }
+}
 
-  /* .project-card h3, .project-card p{
-    padding: 1rem 1.5rem;
-  } */
-
-  .project-card img {
+.project-card img {
     float: right;
     shape-outside: url(/images/cog.png);
     width: 40%;
     max-width: 15rem;
     margin: 0.5em;
-
-  }
+}
 
   .project-card:nth-child(4) {
     border: none;
-  }
+}
 
 
 /* Main Blog Page Styling */
-.blog-container {
-    padding: 0.5rem 1rem;
-}
 
-/* .blog-container h2 {
-    margin-bottom: 0.5rem;
-} */
 .blog-card {
     background: white;
     border-radius: 20px;
     transition: 0.3s;  
     margin-bottom: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 1rem; 
+}
   
-  }
-  
-  .blog-card p, .blog-card h5, .blog-card h3 {
+.blog-card p, .blog-card h5, .blog-card h3 {
     padding: 0 1.4rem 0 1.4rem;
 }
+
 .blog-image {
     width: 100%;
     margin-bottom: 1rem;
@@ -556,6 +568,7 @@ figure {
     height: auto;
     border-radius: 20px 20px 0 0;
 }
+
 .blog-card h5 {
     letter-spacing: 0.1em; 
     margin-bottom: 0.5em;     
@@ -563,101 +576,100 @@ figure {
 
 .blog-card h3, .blog-card p {
     margin-bottom: 2rem;
-
 }
+
+/* This will hide the second section of the blog preview on smaller screens */
 .longer-blog-preview {
     display: none;
 }
+
 .spaced-text {
     text-decoration: none;
     padding: 1rem 1.4rem;
     font-size: 1em;
     letter-spacing: 0.1em;
-    color: var(--primary-color)
-   }
-   .blog-card a {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.blog-card a {
     text-decoration: none;
     font-size: 1em;
     letter-spacing: 0.1em;
     color: var(--primary-color)
-   }
+}
 
 .blog-card:hover {  
     box-shadow: 0 4px 20px #03201dd3;
     cursor: pointer;
 }
   
-/* Blog Post Styling */
+/*Individual Blog Post Styling */
+/* Text Component Stylings */
 
+.blog-post {
+    display: flow-root;
+ }
+
+ .blog-post h2 {
+    font-family: var(--ff-headings);
+    font-size: clamp(1.7rem, 3.2vw + 0.44rem, 3.4rem);    
+    font-weight: 700;
+    line-height: 1.2;
+ }
+
+ .blog-post h3 {
+    color: #444;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+ }
+
+/* This will add a drop cap to the first letter of the post */
 .first-para::first-letter {
     color: var(--primary-color);
     font-weight: bold;
     font-size: 5em;
     float: left;
     padding: 0.05em;
-    margin-right: 0.05em;
-
-   
+    margin-right: 0.05em;   
 }
 
- 
- /* .blog-post {
-    display: flow-root;
- } */
- .blog-post h2 {
-    font-family: var(--ff-headings);
-    font-size: clamp(1.7rem, 3.2vw + 0.44rem, 3.4rem);    
-    font-weight: 700;
-    line-height: 1.2;
-    
-    /*  */
-    /* clamp(3rem, 6.5vw + 0.44rem, 6rem); */
- }
- .blog-post h3 {
-    color: #444;
-    text-transform: uppercase;
-    margin-bottom: 4vw;
- }
- .blog-post h5 {
-    margin-bottom: 9vw;
- }
- .blog-post-img-right {
+.blog-post-img-right {
     float: right;
     border-radius: 50%;
     shape-outside: ellipse(43% 50% at center center);
     margin-left: 5rem;
     width: 50%;
-   
- }
- .blog-post a {
+    max-width: 30rem;   
+}
+
+.blog-post a {
     text-decoration: none;
     color: #8f8e8e;
+}
 
-
- }
-
- .blog-post-img-left {
+.blog-post-img-left {
     float: left;
     border-radius: 50%;
     shape-outside: ellipse(50% 50%);
     margin: 0 2.2em 0.5em 0;
     width: 25%;
- }
+    max-width: 16rem;
+}
 
-
- .bigger {
+.bigger {
     width: 35%;
- }
+}
 
- .blog-post-img-transparent {
+/* This will shape text around the outside of an image with a transparent background. */
+.blog-post-img-transparent {
     float: right;
     shape-outside: url(/images/blog/plant.png);
     width: 50%;
     margin: 0.1em;
-   
  }
- 
 
+ /* This is styling applied to the pull quote in each post */
 blockquote {
     background: #c5b7aa1f;
     border-left:1em solid var(--primary-color);
@@ -665,7 +677,6 @@ blockquote {
     padding:2em 1em;
     quotes:"\201C""\201D";
     line-height: 2em;
-
 }
 
 
@@ -696,19 +707,16 @@ blockquote :first-child {
 blockquote :last-child {
     margin-bottom:0;
 }
+
 .cite{
     display: flex;
     justify-content: flex-end;
-    
-    
-
 }
 
 .cite p {
     font-weight: 600;
     line-height: normal;
     padding: 0;
-
 }
 
 .symbol {
@@ -716,19 +724,16 @@ blockquote :last-child {
     line-height:.1em;
     margin: .4em;
     vertical-align:-.4em;
-
-
 }
-
 
 .post-nav  {
     display:flex;
     justify-content: space-between;
     align-items: center;
     background:var(--primary-color);
-    padding: 2vw 0vw; 
-    
+    padding: 2vw 0vw;    
 }
+
 .post-nav-container nav {
     margin: 0;
 }
@@ -745,24 +750,23 @@ blockquote :last-child {
     width: 50%;
     color: var(--secondary-color);
     display: flex;
-    align-items: center;
-
-    
+    align-items: center;   
 }
+
  /* These changes will be applied to all screen sizes larger than 400px*/
   @media screen and (min-width: 400px) {
     .top-bar {
         flex-direction: row;
         justify-content:space-between;
-     }
-     nav {
+    }
+    nav {
         display: flex;
         margin-right: 1rem;
         width: auto;
-     }
-     nav a {
+    }
+    nav a {
         padding: 0, 1rem;
-     }
+    }
      
     nav a::before {
         content: '';
@@ -771,22 +775,41 @@ blockquote :last-child {
         background:  #c5b7aa;
         transform: scale(0,1);
         transition: transform ease-in-out 250ms;
-        }
-        nav a:hover::before {   
+    }
+    
+    nav a:hover::before {   
         transform: scale(1,1);
-        }
+    }
+    
     main {
         padding: 1rem 1.5rem; 
-    
     } 
+
     p, li {
         line-height: 1.6;
-    
     }
+    /* Media Queries for Index/Homepage (400px+) */
+
+    .welcome-container {
+        display:block;
+    }
+    /* This will change the text to align around the image */
+    .welcome-container img {
+        max-width: 20rem;
+        border-radius: 50%;
+        float: left;
+        shape-outside:ellipse();
+        padding: 0.8rem 0.8rem 0.8rem 1.2rem;
+        margin-right: 0.7rem;
+        width: 60%;
+        box-shadow: 0;    
+    }
+    /* Media Queries for About Me Page (400px+) */
+
     .lightroom-video-container {
-        padding: 0 3rem;
-       
+        margin: 0 3rem;  
     }
+
     .lightroom-video:nth-of-type(2) {
         width: 60%;
         border-radius: 50%;
@@ -799,28 +822,23 @@ blockquote :last-child {
         left: 55%;
         max-width:38%;
         max-height:30%;
-
-
     }
 
-    /* Media Queries for Main Blog Page (For Screens 400px+)*/
+    /* Media Queries for Main Blog Page (400px+)*/
 
     .blog-image img {
         height: 47vw;
         object-fit:cover;
-        object-position: center;
-        
+        object-position: center;    
     }
+
     .reposition-lower img {
-        object-position: 50% 70%; 
-        
+        object-position: 50% 70%;    
     }
+
     .reposition-higher img {
-        object-position: 50% 8%; 
-        
+        object-position: 50% 8%;    
     }
-
-
 
     /* Media Queries for Blog Posts (For Screens 400px+) */
     .post-nav-container {
@@ -832,54 +850,7 @@ blockquote :last-child {
     .quote-container:after {
         vertical-align:-.5em;
     }
-
-  }
-  /* These changes will be applied to all screen sizes larger than 650px (they will also have the effect applied from the previous media query unless overridden below*/
-  @media screen and (min-width: 500px) {
-  .teaching-image-grid {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 1rem;
 }
-.teaching-image {
-    width: 100%;
-
-   
-}
-
-.teaching-image img {
-    width: 100%;
-    height: 80%;
-    object-fit: cover;
-    border-radius: 0%;
- 
-    
-}
-
-.teaching-image-2 {
-    grid-row: span 2;
-
-    
-}
-
-.teaching-image-2 img{
-    height: 90%;
-
-    
-}
-
-.teaching-image figcaption {
-    background: var(--primary-color);
-    height: 20%;
-    color: var(--secondary-color);
-    padding: 1rem;
-    font-size: 1rem;
-}
-.teaching-image-2 figcaption {
-    height: 10%;
-      
-}
-  }
 
 /* These changes will be applied to all screen sizes larger than 650px (they will also have the effect applied from the previous media query unless overridden below*/
    @media screen and (min-width: 650px) {
@@ -891,15 +862,16 @@ blockquote :last-child {
          background: url(images/hero-desktop2.jpg) no-repeat;
          background-position: bottom; 
          background-size: cover;
-     
     }
    
     p, li {
         font-size: 1.3rem;
     }
+
     h3 {
         font-size: 1.6rem;
     }
+    /* Media Queries for About Me Page (650px+) */
     .original-resume-text {
         border-radius: 50%;    
         position: absolute;
@@ -911,250 +883,273 @@ blockquote :last-child {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-        
-        
-        
+        align-items: center;       
     }
-    
+
     .original-resume-text p {
         color: #07564d70;
         background: var(--secondary-color);
         font-size: 1.5rem;
         border-radius:20%;
-        padding: 0.5rem 0.2rem;
-        
-    
+        padding: 0.5rem 0.2rem;   
     }
+
     .resume-image-overlay { 
         opacity: 0;
+   }
 
-    }
     .resume-image-overlay:hover {
         opacity: 1;
         background: #07564de1;
     }
+
     .lightroom-video-container {
         width: 60%;
         float:left;
         margin-left: -2rem;
-        max-width: 32rem;
-        
-  
-        
-           
+        max-width: 32rem;          
     }
 
+    .lightroom-video-container figcaption p , .teaching-image figcaption {
+        font-size: 1.3rem;
+    }
 
-
-
-    /* Media Queries for Main Blog Page (For Screens 650px+)  */
+    .lightroom-video-container figcaption {
+        padding: 6rem;
+    }
+    
+    /* Media Queries for Main Blog Page (650px+)  */
     /* This will show a longer preview of the blog post */
     .longer-blog-preview {
         display: inline;
     }
+
     /* This will change the content to go across two columns due to the larger screen size */
     .blog-container {
         flex-direction: row;
         justify-content: space-between;
-        align-items: flex-start;
-        
+        align-items: flex-start;   
     }
            
     .blog-card {
         width: 48%;
         margin-bottom: 1.5rem;
         min-height: 45rem;
-
-
-            }
+    }
     
     .blog-card p {
         font-size: 1rem;
 
     }
+
     .blog-card h3 {
         font-size: 1.3rem;
-    }  
+    } 
+    
     .blog-card img {
         height: 30vw;
 
-    }      
+    } 
+
     .longer-blog-preview {
         display: none;
-            }
+    }
+
     .blog-card:nth-child(2) {
         width: 100%;
         margin: 0.5rem 1.5rem 2rem;
         min-height: 20rem;
+    }
 
-            }
     .blog-container h2 {
         width: 100%;
         text-align: center;
+    }
 
-                    }
     .blog-card:nth-child(2) .longer-blog-preview{
         display: inline;
-            }
-              
-      
-    /* Media Queries for Blog Posts (For Screens 650px+) */
-    .blog-post h3 {
-        margin-bottom: 1rem;
-     }
-     .blog-post h5 {
-        margin-bottom: 4vw;
-        text-decoration: none;
-        
-     }
+    }
+             
+    /* Media Queries for Blog Posts (650px+) */
+    .blog-post h5 {
+        /* margin-bottom: 4vw; */
+        text-decoration: none;       
+    }
 
-     .blog-post h5 a {
+    .blog-post h5 a {
         margin-bottom: 4vw;
         text-decoration: none;
-        color: var(--primary-color)
-        
-     }
-     blockquote p {
+        color: var(--primary-color)  
+    }
+
+    blockquote p {
         color: var(--primary-color);
         font-size: 1.6rem;
-    
     }
        
-    }
+}
 
    
-    @media screen and (min-width: 1000px) {
-        main {
-            padding: 1rem 11rem;
-        }
-        #logo {
-            height: 2.8rem;
-        }
-        header {
-            border-bottom: solid 0.4rem  #bdd0cc;
-
-        }
-        .top-bar {
-            border-bottom: solid 0.4rem  #bdd0cc; 
-        }
-        #hero {
-            padding: 0.1em;
-        }
-        #hero h1 {
-            font-family: 'Fredericka the Great', cursive;
-            font-size: clamp(3rem, 6.5vw + 0.44rem, 4.6rem);
-            line-height: 4rem;
-            margin-bottom: 0.25em;
-   
-        }
-        #hero h2 {
-            font-size: 2rem;
-        }
-        .button {
-            padding: 0.3rem 0.9rem;
-            margin:0.2rem 0;
-        }
-        /* About Me Stylings */
-        .about-me-container {
-            padding: 0.5rem 1rem;
-
-        }
-        .lightroom-video:nth-of-type(2) {
-
-            margin-top: -39%;
+@media screen and (min-width: 1000px) {
+    #logo {
+        height: 2.8rem;
+    }
         
-        }
-        .lightroom-video-container figcaption{
-            padding: 0.2rem;
-        }
-        /* Teaching Images */
-        
-        .climbing-photos-slider {
-            position: relative;
-            width: 75%;
-            height: 45vw;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center; 
-        }
-        .climbing-photos-slider-container {
-            position: relative;
-            width: 75%;
-            height: 45vw;
-            display: flex;
-            justify-content: center;
-            align-items: flex-end;
-            
-        }
-        .climbing-slider-label h5 {
-            position: absolute;
-            z-index: 1000;
-            top: 0;
-        }
-        .climbing-photos-slider .climbing-img {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            display: flex;
-            justify-content: center;
-            z-index: 1;
-            margin-bottom: 2.5rem;
-        }
-        
-        .climbing-photos-slider .climbing-img img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 1rem;
-            box-shadow: 0 3px 8px #03201db9;
-          }
-        .climbing-photos-slider input[type=radio] {
-            z-index: 1000;
-            margin: 5px;
-            margin-bottom: 0.5rem;
-            cursor: pointer;
-            height: 2rem;
-            width: 5%;
-            border: 0;
-          }
-        
-          .climbing-photos-slider input[type=radio]:checked + .climbing-img {
-            z-index: 10;
-        
-        
-        }
-        
-        
-        /* Blog Post Stylings */
-
-        .blog-post h3 {
-            margin-bottom: 0.7rem;
-         }
-         .blog-post h5 {
-            margin-bottom: 4vw;
-         } 
-         .blog-card {
-            width: 30%;
-            margin-bottom: 1.5rem;
-            min-height: 45rem; 
-          
-                }
-        .blog-card img {
-            height: 16vw;
-
-                }
-        .blog-card:nth-child(2), .blog-card:nth-child(3)  {
-            width: 47%;
-            margin: 0.5rem 0.6rem 2rem;
-            min-height: 38rem;
-            
-             }
+    header {
+        border-bottom: solid 0.4rem  #bdd0cc;
 
     }
+    .top-bar {
+        border-bottom: solid 0.4rem  #bdd0cc; 
+    }
+
+    #hero {
+        padding: 0.1em;
+    }
+    
+    #hero h1 {
+        font-family: 'Fredericka the Great', cursive;
+        font-size: clamp(3rem, 6.5vw + 0.44rem, 4.6rem);
+        line-height: 4rem;
+        margin-bottom: 0.25em;
+    }
+    
+    #hero h2 {
+        font-size: 2rem;
+    }
+    
+    .button {
+        padding: 0.3rem 0.9rem;
+        margin:0.2rem 0;
+    }
+
+    /* About Me Stylings */
+    .lightroom-video:nth-of-type(2) {
+        margin-top: -39%;
+    }
+    .lightroom-video-container figcaption{
+        padding: 0.2rem;
+    }
+        
+    .teaching-image figcaption {
+        padding-bottom: 2.5rem;
+    }
+
+    .teaching-image-grid {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 1rem;
+    }
+    .teaching-image {
+        width: 100%;    
+       
+    }
+    
+    .teaching-image img {
+        width: 100%;
+        height: 80%;
+        object-fit: cover;
+        border-radius: 0%;   
+    }
+    
+    .teaching-image-2 {
+        grid-row: span 2;       
+    }
+    
+    .teaching-image-2 img{
+        height: 90%;        
+    }
+    
+    .teaching-image-2 figcaption {
+        height: 10%;      
+    }
+
+    /* Teaching Images */
+    .education-container {
+        display:flex;
+        flex-wrap: wrap;
+    }
+    
+    .education-card {
+        width: 29%;
+        margin: 1rem;
+    }
+    .climbing-photos-slider {
+        position: relative;
+        width: 75%;
+        height: 45vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+    }
+        
+    .climbing-photos-slider-container {
+        position: relative;
+        width: 75%;
+        height: 45vw;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;    
+    }
+
+    .climbing-slider-label h5 {
+        position: absolute;
+        z-index: 1000;
+        top: 0;
+    }
+
+    .climbing-photos-slider .climbing-img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        z-index: 1;
+        margin-bottom: 2.5rem;
+    }
+        
+    .climbing-photos-slider .climbing-img img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 1rem;
+        box-shadow: 0 3px 8px #03201db9;
+    }
+        
+    .climbing-photos-slider input[type=radio] {
+        z-index: 1000;
+        margin: 5px;
+        margin-bottom: 0.5rem;
+        cursor: pointer;
+        height: 2rem;
+        width: 5%;
+        border: 0;
+    }
+        
+    .climbing-photos-slider input[type=radio]:checked + .climbing-img {
+        z-index: 10;
+    }
+    
+    .blog-card {
+        width: 30%;
+        margin-bottom: 1.5rem;
+        min-height: 45rem; 
+    }
+    
+    .blog-card img {
+        height: 16vw;
+    }
+    
+    .blog-card:nth-child(2), .blog-card:nth-child(3)  {
+        width: 47%;
+        margin: 0.5rem 0.6rem 2rem;
+        min-height: 38rem;
+    }
+
+}
     
