@@ -216,11 +216,15 @@ main a:visited {
     border-top: solid 0.5rem #bdd0cc;
 }
 
-.copyright-info p {
+.copyright-info h6 {
     text-align: center;
     color: #bdd0cc;
     padding: 0.5rem;
     margin-top: auto;
+    font-family: var(--ff-headings);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.4;
 }
 /* Index (Homepage) Exclusive Stylings */
 .welcome-container img {
@@ -786,7 +790,7 @@ blockquote :last-child {
         padding: 1rem 1.5rem; 
     } 
 
-    p, li {
+    h6, p, li {
         line-height: 1.6;
     }
     /* Media Queries for Index/Homepage (400px+) */
@@ -869,7 +873,7 @@ blockquote :last-child {
          background-size: cover;
     }
    
-    p, li {
+    h6, p, li {
         font-size: 1.3rem;
     }
 
