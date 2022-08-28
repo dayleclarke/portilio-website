@@ -628,7 +628,7 @@ figure {
 .first-para::first-letter {
     color: var(--primary-color);
     font-weight: bold;
-    font-size: 5em;
+    font-size: 5.5em;
     float: left;
     padding: 0.05em;
     margin-right: 0.05em;   
@@ -638,7 +638,7 @@ figure {
     float: right;
     border-radius: 50%;
     shape-outside: ellipse(43% 50% at center center);
-    margin-left: 5rem;
+    margin-left: 2rem;
     width: 50%;
     max-width: 30rem;   
 }
@@ -807,7 +807,7 @@ blockquote :last-child {
     /* Media Queries for About Me Page (400px+) */
 
     .lightroom-video-container {
-        margin: 0 3rem;  
+        margin: 0rem 3rem 0 1rem;  
     }
 
     .lightroom-video:nth-of-type(2) {
