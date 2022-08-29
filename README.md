@@ -3,7 +3,7 @@
 
 ## [Portfolio Website](https://dayle-clarke.netlify.app)
 ## [Github Repo](https://github.com/dayleclarke/portilio-website)
-## [Video Link](https://youtu.be/tD08cVaP6Y0)
+## [Video Link](https://youtu.be/h-h2Lzclsws)
 ---
 ## Purpose 
 
