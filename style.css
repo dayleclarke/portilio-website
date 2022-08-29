@@ -769,10 +769,7 @@ blockquote :last-child {
         margin-right: 1rem;
         width: auto;
     }
-    nav a {
-        padding: 0, 1rem;
-    }
-     
+
     nav a::before {
         content: '';
         display: block;
@@ -803,11 +800,10 @@ blockquote :last-child {
         max-width: 20rem;
         border-radius: 50%;
         float: left;
-        shape-outside:ellipse();
         padding: 0.8rem 0.8rem 0.8rem 1.2rem;
         margin-right: 0.7rem;
         width: 60%;
-        box-shadow: 0;    
+       
     }
     /* Media Queries for About Me Page (400px+) */
 
@@ -827,9 +823,6 @@ blockquote :last-child {
         left: 55%;
         max-width:38%;
         max-height:30%;
-    }
-    .teaching-image figcaption {
-        max-height: rem;
     }
 
 
