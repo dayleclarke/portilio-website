@@ -25,88 +25,6 @@ body {
     background: #f0f0fd;
 }
 
-/* Stylings for Header */
- /* Graphical Component 1 (Interactive Nav Bar with Hover Animation)  */
-.top-bar {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: var(--primary-color-opaque);
-    border-bottom: solid 0.5rem  #bdd0cc; 
-    padding-bottom: 0.1rem;  
-}
-
-#logo {
-    height: clamp(3rem, 6vw, 3.5rem);
-    margin: 0.2rem; 
-}
-
-nav {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-}
-
-nav a {
-    color:  var(--secondary-color);
-    text-decoration: none;
-    padding: 0 1.9vw;
-    font-size: clamp(1.1rem, 2.60vw + 0.44rem, 1.6rem);  
-}
-
-nav a:hover {  
-    color: #c5b7aa;
-}
-
-/*  Graphical Component 2 (Hero Element with website title and an ancher link to contact info)*/
-header {
-    background: url(images/hero-crop4.jpg) no-repeat;
-    background-position: center; 
-    background-size: cover;
-    background-color: var(--primary-color);
-    border-bottom: solid 0.5rem   #bdd0cc;
-}
-
-#hero {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0.6rem 0;
-}
-
-h1 {
-    font-family: 'Fredericka the Great', cursive;
-    font-size: clamp(3rem, 6.5vw + 0.44rem, 6rem);
-    margin: 0.1em 0.1em;
-    color: var(--secondary-color);
-  }
-
-#hero h2 {
-    font-family: var(--ff-headings);
-    font-size: clamp(1.5rem, 1.9vw + 0.44rem, 2.6rem);
-    color: var(--secondary-color);
-    padding: 0.1em 0;
-    color:#07564d;
-    background-color: #c5b7aab7;
-    text-align: center;
-    width: 100%;
-}
-
-.button {
-    display: inline;
-    text-decoration: none;
-    border: 2px solid;
-    margin: 0.4em 0 0.1rem;
-    padding: 0.5rem 1rem;
-    color: #bdd0cc;
-    background-color: var(--primary-color-opaque);
-    font-size: clamp(1.1rem, 2.60vw + 0.44rem, 1.6rem);
-}
-
-/* Styling for the main content site wide */
-
 p    {
     padding: 1rem 1.2rem;
     font-size: 1rem;
@@ -119,6 +37,13 @@ li {
     margin: 0rem 2rem;
 }
 
+h1 {
+    font-family: 'Fredericka the Great', cursive;
+    font-size: clamp(3rem, 6.5vw + 0.44rem, 6rem);
+    margin: 0.1em 0.1em;
+    color: var(--secondary-color);
+}
+  
 h2 {
     font-family: 'Fredericka the Great', cursive;
     font-size: 3rem;
@@ -151,6 +76,88 @@ h5 {
     margin-bottom: 1rem;
 }
 
+/* Stylings for Header */
+ /* Text component 1 (R2) (Interactive nav bar with hover animation) */
+
+.top-bar {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--primary-color-opaque);
+    border-bottom: solid 0.5rem  #bdd0cc; 
+    padding-bottom: 0.1rem;  
+}
+
+#logo {
+    height: clamp(3rem, 6vw, 3.5rem);
+    margin: 0.2rem; 
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+nav a {
+    color:  var(--secondary-color);
+    text-decoration: none;
+    padding: 0 1.9vw;
+    font-size: clamp(1.1rem, 2.60vw + 0.44rem, 1.6rem);  
+}
+
+nav a:hover {  
+    color: #c5b7aa;
+}
+
+/* Text component 2 (R2) 1 (Hero Element) contains website title and an anchor  link to contact info at the bottom of the page using flexbox. Be careful adjusting this as it is important for the lightly coloured features of the background image (waves and water ripples) not to go behind the white heading.  The position the image is cropped from changes at different screen sizes to overcome this problem. Component uses the clamp property and relative units of measure for responsive sizing */
+
+header {
+    background: url(images/hero-crop4.jpg) no-repeat;
+    background-position: center; 
+    background-size: cover;
+    background-color: var(--primary-color);
+    border-bottom: solid 0.5rem   #bdd0cc;
+}
+
+#hero {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.6rem 0;
+}
+
+
+
+#hero h2 {
+    font-family: var(--ff-headings);
+    font-size: clamp(1.5rem, 1.9vw + 0.44rem, 2.6rem);
+    color: var(--secondary-color);
+    padding: 0.1em 0;
+    color:#07564d;
+    background-color: #c5b7aab7;
+    text-align: center;
+    width: 100%;
+}
+
+.button {
+    display: inline;
+    text-decoration: none;
+    border: 2px solid;
+    margin: 0.4em 0 0.1rem;
+    padding: 0.5rem 1rem;
+    color: #bdd0cc;
+    background-color: var(--primary-color-opaque);
+    font-size: clamp(1.1rem, 2.60vw + 0.44rem, 1.6rem);
+}
+
+.button:hover {
+    transform: scale(1.03);
+}
+
+/* Stylings for the main content */
 main {
     display: flex;  
     flex-wrap: wrap;
@@ -169,15 +176,18 @@ main p, main li {
     color: #282828;
 }
 
-main a {
+main a:link {
     color: var(--primary-color);
 }
 
 main a:visited {
     color: #282828;   
 }
+main a:hover {
+    color: #9D9288 ;
+}
 
-  /* Footer Stylings */
+/* Footer Stylings */
 #contact-details {
   display: flex;
   background: #c5b7aa;
@@ -200,6 +210,7 @@ main a:visited {
     text-align: center;
 }
 
+/* Graphical Component 1 (Social Media Links with Flexbox and hover animations, using the clamp property and relative units of measure for responsive sizing)  */
 .social-media-links {
     margin: 0.6rem 2rem;
     display:flex;
@@ -208,8 +219,12 @@ main a:visited {
 
 .social-media-links img {
     width: clamp(2.5rem, 2.5vw + 1.8rem, 4rem);
-    padding: 0.1rem;
+    padding: 0.2rem;
   }
+  
+.social-media-links img:hover {
+  transform: scale(1.1);
+}
 
 .copyright-info {
     background: var(--primary-color);
@@ -226,6 +241,7 @@ main a:visited {
     font-size: 1rem;
     line-height: 1.4;
 }
+
 /* Index (Homepage) Exclusive Stylings */
 .welcome-container img {
     border-radius: 50%;
@@ -241,7 +257,7 @@ main a:visited {
 /* About Me Exclusive Stylings */
 
 /* Resume Link Styling */
-
+/* Graphical Component 2 (R3) Here I have used absolute and relative positioning to overlap text and graphics. This is a link with a call to action for the user to download my resume. It contains an image of the pdf logo positioned on top of a textured background. The div has a light opaque background in the primary font colour.  When the user hovers over the image there is a call to download my resume */
 .resume-link-container {
     position:relative;
     width: 40vw;
@@ -249,16 +265,22 @@ main a:visited {
     max-width: 15rem;
     max-height: 15rem;
     float: right;
-
 }
 
-.resume-image {
+.resume-background-image {
     display: block;
     width: 100%;
     height: 100%;
-    border-radius: 50%;
-    
+    border-radius: 50%;    
 }
+.pdf-icon {
+    width: 50%;
+    position: absolute;
+    top: 20%;
+    left: 26%;
+    opacity:0.7;    
+}
+
 .resume-image-overlay {
     border-radius: 50%;    
     position: absolute;
@@ -273,35 +295,29 @@ main a:visited {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: opacity 0.25s;
-   
+    opacity: 0;
+    transition: opacity 0.25s;   
 }
+.resume-image-overlay h5 {
+    font-size: 1rem;
+    color: var(--secondary-color); 
+} 
 
-.original-resume-text {
-    display: none;
-}
 .resume-image-overlay p {
     color:var(--secondary-color);
     font-size: 0.8rem;
     padding: 0rem;
     text-align: center;
-    margin-top: 0.2rem;
-
-    
+    margin-top: 0.2rem;    
 }
-.resume-image-overlay h5 {
-    font-size: 1rem;
- 
-} 
 
 .resume-image-overlay:hover {
-    /* opacity: 1; */
-    box-shadow: 0 3px 8px #03201db9;    
-    
-   
-
+    opacity: 1;
+    background: #07564de1;
+    box-shadow: 0 3px 8px #03201db9;
 }
-/* Lightroom Images */
+
+/* Lightboad Stylings */
 
 .lightroom-video-container {
     width: 90%;
@@ -323,7 +339,6 @@ main a:visited {
 
 }
 
-
 .lightroom-video-container figcaption {  
     display:flex;
     justify-content: center;
@@ -334,19 +349,22 @@ main a:visited {
     position: absolute;
     top: 46%;
     left: 60%;
-
 }
+
 .lightroom-video-container figcaption p {
     color: var(--secondary-color);
     text-align: center;
     font-size: 0.9rem;
 } 
 
+/* Graphical Component 3 (R3) Using CSS Grid to create an image collage. The number of columns and grid gap will increase as the screen size increases */
+
 .teaching-image-grid {
     display: grid;
     gap: 1.2rem;
     margin-bottom: 1.5rem;
 }
+
 .teaching-image {
     width: 100%;   
 }
@@ -355,17 +373,8 @@ main a:visited {
     width: 100%;
     height: 80%;
     object-fit: cover;
-    border-radius: 1em;
-
- 
-    
+    border-radius: 1em;    
 }
-
-/* .teaching-image-2 img{
-    height: 75%;
-
-    
-} */
 
 .teaching-image figcaption {
     background: var(--primary-color);
@@ -385,42 +394,29 @@ main a:visited {
     transition: 0.3s;  
     margin-bottom: 1rem;
     padding-bottom: 1rem;
-    box-shadow: 0 3px 8px #03201db9;
-  
+    box-shadow: 0 3px 8px #03201db9; 
   }
-/* .teaching-image-2 figcaption {
-    height: 25%;
-      
-} */
 
 .image-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 13rem;
-    
-
 }    
+
 .image-container {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
 }
+
 figure {
     width: 30%;
 }
-/* li {
-    line-height: 1.6;
-    color: #282828;
-    font-size: 1.3rem;
-    /*  */
 
-    /* Slider Stylings */
+/* Slider of Climbing Images Stylings */
 
-/* .background-img {
-    display: none;
-} */
-
+/* Graphical Component 4 (R3) (Adventure Images Slider using radio buttons to toggle through different images) */
 
 .climbing-photos-slider {
     position: relative;
@@ -431,20 +427,22 @@ figure {
     justify-content: center;
     align-items: center; 
 }
+
 .climbing-photos-slider-container {
     position: relative;
     width: 90%;
     height: 80vw;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
-    
+    align-items: flex-end;    
 }
+
 .climbing-slider-label h5 {
     position: absolute;
     z-index: 1000;
     top: 0;
 }
+
 .climbing-photos-slider .climbing-img {
     position: absolute;
     width: 100%;
@@ -466,6 +464,7 @@ figure {
     border-radius: 1rem;
     box-shadow: 0 3px 8px #03201db9;
   }
+
 .climbing-photos-slider input[type=radio] {
     z-index: 1000;
     margin: 5px;
@@ -478,9 +477,8 @@ figure {
 
   .climbing-photos-slider input[type=radio]:checked + .climbing-img {
     z-index: 10;
-
-
 }
+
 .climbing-photos-slider p {
      background: var(--primary-color);
      color: var(--secondary-color);
@@ -489,27 +487,8 @@ figure {
      border-radius: 1em;
      margin-top: 1rem;
 }
-    /* margin: 1rem; */
-
-
-
-/* current file */
-/* figure img {
-    border-radius: 10%;
-    margin-left:2rem;
-} */
-/* figcaption {
-    /* margin-top: -6.2rem; */
-    /* padding: 0.5rem 1rem;
-    background: var(--primary-color-opaque);
-    color: var(--secondary-color); */
-    /* position: absolute; */
-    /* border-radius: 10% */
-    
-
-
-
-/* Projects */
+   
+/* Projects Stylings */
 /* Embeded YouTube Videos*/
 .iframe-container{
     position: relative;
@@ -525,7 +504,7 @@ figure {
     width: 100%;
     height: 100%;
 }
-
+/* Project Cards */
 .project-card {
     box-shadow: 0 4px 10px #03201db9;
     padding: 0;
@@ -549,7 +528,8 @@ figure {
 
 
 /* Main Blog Page Styling */
-
+/* Graphical Component 5 (R3) (One image of each article is shown and cropped to cover the assigned space at the top of each card.  The area shown is adjusted to fit the contents of each image, hover drop shadow effects are applied) */
+/* Text Component 3 (R2) (a small snippet of each article with the title, date and read time is shown below with an associated image.  The sample size of each article displayed is designed to change depending on screen size).  The entire component is a link to the corresponding blog post */
 .blog-card {
     background: white;
     border-radius: 20px;
@@ -609,9 +589,7 @@ figure {
     cursor: pointer;
 }
   
-/*Individual Blog Post Styling */
-/* Text Component Stylings */
-
+/*Individual Blog Post Stylings */
 .blog-post {
     display: flow-root;
  }
@@ -674,7 +652,7 @@ figure {
     margin: 0.1em;
  }
 
- /* This is styling applied to the pull quote in each post */
+/* Text component 5 (R2) blockquote which contains a quote from the article. Uses pseudo-classes :before and :after to place quotation marks.  */
 blockquote {
     background: #c5b7aa1f;
     border-left:1em solid var(--primary-color);
@@ -696,6 +674,7 @@ blockquote p {
     line-height:.1em;
     vertical-align:-.4em;
 }
+
 .quote-container:after {
     content:close-quote;
     font-size:5em;
@@ -731,6 +710,7 @@ blockquote :last-child {
     vertical-align:-.4em;
 }
 
+/* Text component 4 (R2) link which allows the user to progress to the next and/or previous page */
 .post-nav  {
     display:flex;
     justify-content: space-between;
@@ -825,9 +805,7 @@ blockquote :last-child {
         max-height:30%;
     }
 
-
     /* Media Queries for Main Blog Page (400px+)*/
-
     .blog-image img {
         height: 47vw;
         object-fit:cover;
@@ -873,36 +851,14 @@ blockquote :last-child {
     h3 {
         font-size: 1.6rem;
     }
+
     /* Media Queries for About Me Page (650px+) */
-    .original-resume-text {
-        border-radius: 50%;    
-        position: absolute;
-        top: 0;
-        left: 0%;
-        width: 100%;
-        height: 100%;
-        padding: 1rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;       
-    }
-
-    .original-resume-text p {
-        color: #07564d70;
-        background: var(--secondary-color);
+    .resume-image-overlay h5 {
         font-size: 1.5rem;
-        border-radius:20%;
-        padding: 0.5rem 0.2rem;   
-    }
-
-    .resume-image-overlay { 
-        opacity: 0;
-   }
-
-    .resume-image-overlay:hover {
-        opacity: 1;
-        background: #07564de1;
+    } 
+    
+    .resume-image-overlay p {
+        font-size: 1rem;  
     }
 
     .lightroom-video-container {
@@ -920,7 +876,6 @@ blockquote :last-child {
         padding: 6rem;
     }
 
-    
     /* Media Queries for Main Blog Page (650px+)  */
     /* This will show a longer preview of the blog post */
     .longer-blog-preview {
@@ -942,7 +897,6 @@ blockquote :last-child {
     
     .blog-card p {
         font-size: 1rem;
-
     }
 
     .blog-card h3 {
@@ -951,7 +905,6 @@ blockquote :last-child {
     
     .blog-card img {
         height: 30vw;
-
     } 
 
     .longer-blog-preview {
@@ -992,7 +945,7 @@ blockquote :last-child {
        
 }
 
-   
+ /* These changes will be applied to all screen sizes larger than 1000px (they will also have the effect applied from the previous media queries unless overridden below*/  
 @media screen and (min-width: 1000px) {
     #logo {
         height: 2.8rem;
@@ -1019,17 +972,19 @@ blockquote :last-child {
     
     #hero h2 {
         font-size: 2rem;
+        margin-bottom: 0;
     }
     
     .button {
         padding: 0.3rem 0.9rem;
-        margin:0.2rem 0;
+        margin:0.3rem 0;
     }
 
     /* About Me Stylings */
     .lightroom-video:nth-of-type(2) {
         margin-top: -39%;
     }
+
     .lightroom-video-container figcaption{
         padding: 0.2rem;
     }
@@ -1043,9 +998,9 @@ blockquote :last-child {
         grid-template-columns: 1fr 2fr;
         gap: 1rem;
     }
+
     .teaching-image {
-        width: 100%;    
-       
+        width: 100%;       
     }
     
     .teaching-image img {
@@ -1067,7 +1022,6 @@ blockquote :last-child {
         height: 10%;      
     }
 
-    /* Teaching Images */
     .education-container {
         display:flex;
         flex-wrap: wrap;
