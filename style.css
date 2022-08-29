@@ -537,7 +537,7 @@ figure {
 
 .project-card img {
     float: right;
-    shape-outside: url(/images/cog.png);
+    shape-outside: url("/images/cog.png");
     width: 40%;
     max-width: 15rem;
     margin: 0.5em;
@@ -656,7 +656,7 @@ figure {
 .blog-post-img-left {
     float: left;
     border-radius: 50%;
-    shape-outside: ellipse(50% 50%);
+    shape-outside: circle(50%);
     margin: 0 2.2em 0.5em 0;
     width: 25%;
     max-width: 16rem;
@@ -669,7 +669,7 @@ figure {
 /* This will shape text around the outside of an image with a transparent background. */
 .blog-post-img-transparent {
     float: right;
-    shape-outside: url(/images/blog/plant.png);
+    shape-outside: url("/images/blog/plant.png");
     width: 50%;
     margin: 0.1em;
  }
