@@ -35,24 +35,49 @@
     </header>
     <main>
         <h2>Projects</h2>
+        <article class="project-card">
+            <div class="project-content">
+                <h3>A Tic-Tac-Toe Terminal Application</h3>
+                <p>"Animal Tic-Tac-Toe” is a terminal (command line) application which is a variation on the classic Tic-Tac-Toe game.  In the game two players (one human user against one computer user) will take turns placing an X or O marker on a three-by-three grid.  The winner is whichever player is first to place three of their markers in a horizonal, vertical or diagonal row. If both players play optimally the game will end in a draw. </p>
+                <h4>Features</h4>
+                <ol>
+                    <li><strong>An Easy mode Person vs. Environment (PvE).</strong>  The user can select to play on easy mode against a computer-controlled player who will randomly select where to go based on the free positions available. There are two easy computer players the user can select from: Pete the Panda or Katie the Koala.</li>
+                    <li><strong>An Expert mode Person vs. Environment (PvE).</strong>  The user can select to play on expert mode against a computer-controlled player that will select the optimal position to place their marker each time.  It is an unbeatable player which will either win or tie all games. When an expert player goes first it will position their marker in one of the randomly  chosen corner positions. At all other times this player will invoke a recursive minimax function to return the optimal position based which position has the highest utility score (after testing all the possible free moves on the board).  There are two expert computer players the user can select from: Ollie the Octopus and Danni the Dolphin (both known to be highly intelligent animals).
+                    </li>
+                    <li><strong> Game play order is determined by the outcome of a Scissors-Paper-Rock game. </strong></li>
+                    <li><strong> Users can login to maintain their game/play history. </strong>A user log option allows the user to login so that their game play history can be maintained.  User credentials are maintained in a separate csv file. Passwords must meet validation criteria and be confirmed by the user. When the app begins users are given the option to register as a new user, log in with an existing username or to play as a guest. </li>
+                    <li><strong> Game play data is maintained</strong> and the top 10 players (as calculated based on the total number of wins) are printed to the console at the end of each game.</li>
+                </ol>
+            </div>
+
+            <div class="iframe-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/BPTNQpLH3gA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </article>
         <article class="project-card"> 
-            <h3>An Interactive Learning Resource</h3>
-            <p>This is a video showcasing an interactive learning resource I created for Secondary School Accounting students. The resource is a PowerPoint presentation with embedded spreadsheets, videos and character voices.  It is a fictional work experience scenario where students meet different employees of the firm.  Each character will discuss their role in the organisation and give the user different tasks to complete. There are embedded Excel spreadsheets which use IF/THEN formulas to provide immediate feedback on responses. </p>
+            <div class="project-content">
+                <h3>An Interactive Learning Resource</h3>
+                <p>This is a video showcasing an interactive learning resource I created for Secondary School Accounting students. The resource is a PowerPoint presentation with embedded spreadsheets, videos and character voices.  It is a fictional work experience scenario where students meet different employees of the firm.  Each character will discuss their role in the organisation and give the user different tasks to complete. There are embedded Excel spreadsheets which use IF/THEN formulas to provide immediate feedback on responses. </p>
+            </div>
             <div class="iframe-container">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/BPTNQpLH3gA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </article>
         <article class="project-card">
-            <h3>Educational Videos Made Using Light board Technology</h3>
-            <p> I have made several educational videos using lightroom technology. This involves writing on an ultra-clear glass chalkboard which is lit up internally with LED strip lights. Filming occurs in an all-black room to make the writing, which is done in fluorescent markers, stand out. The video is then reversed using Camtasia so that the content is not backwards. This setup allows for a more immersive user experience as I can write as I am teaching whilst maintaining eye contact with the audience. </p>
+            <div class="project-content">
+                <h3>Educational Videos Made Using Light board Technology</h3>
+                <p>I have made several educational videos using lightroom technology. This involves writing on an ultra-clear glass chalkboard which is lit up internally with LED strip lights. Filming occurs in an all-black room to make the writing, which is done in fluorescent markers, stand out. The video is then reversed using Camtasia so that the content is not backwards. This setup allows for a more immersive user experience as I can write as I am teaching whilst maintaining eye contact with the audience.</p>
+            </div>
             <div class="iframe-container">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/gs9TUcT-vWg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>          
         </article>
         <article class="project-card">
+            <div class="project-content">
             <h3>Terminal Application- Under Construction</h3>
-            <img src="/images/cog.png" alt="cog icon">
-            <p>I am currently working on designing, implementing and testing a terminal application utilising a range of programming concepts and structures using Python. This application will accept user input in the form of a file or text input and produce printed output or interact with the file system. Check back soon for more information.</p>           
+                <img src="/images/cog.png" alt="cog icon">
+                <p>I am currently working on designing, implementing and testing a terminal application utilising a range of programming concepts and structures using Python. This application will accept user input in the form of a file or text input and produce printed output or interact with the file system. Check back soon for more information.</p>
+            </div>           
         </article>            
     </main>
     <footer>
