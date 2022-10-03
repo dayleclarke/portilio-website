@@ -512,7 +512,7 @@ figure {
     border-radius: 20px;
 }
 
-.project-card img {
+.under-construction {
     float: right;
     shape-outside: url("/images/cog.png");
     width: 40%;
@@ -520,11 +520,27 @@ figure {
     margin: 0.5em;
 }
 
+.github-repo-container img{
+    width: 8vw;
+
+}
+
+.github-repo-container {
+    float: right;
+    background: #c5b7aa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7rem;
+    margin: 0.7rem;
+    border-radius: 1rem;
+
+    
+}
+
 .project-card:nth-child(5) {
     border: none;
 }
-
-.project-card li
 
 
 /* Main Blog Page Styling */
@@ -852,6 +868,19 @@ blockquote :last-child {
         font-size: 1.6rem;
     }
 
+    .project-content h4  {
+        font-size: 1.5rem;
+        text-transform: none;
+    }
+    .project-content strong  {
+        color: #444;
+        font-weight: 600;
+    }
+   
+    .project-content  {
+        padding: 2rem;
+    }
+
     /* Media Queries for About Me Page (650px+) */
     .resume-image-overlay h5 {
         font-size: 1.5rem;
@@ -874,19 +903,6 @@ blockquote :last-child {
 
     .lightroom-video-container figcaption {
         padding: 6rem;
-    }
-    /* Media Queries for Project Page */
-    .project-content h4  {
-        font-size: 1.5rem;
-        text-transform: none;
-    }
-    .project-content strong  {
-        color: #444;
-        font-weight: 600;
-    }
-   
-    .project-content  {
-        padding: 2rem;
     }
 
     /* Media Queries for Main Blog Page (650px+)  */
